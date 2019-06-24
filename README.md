@@ -24,7 +24,7 @@ choco install kube-pf
 ### Manual Installation
 
 ```bash
-$ go get -u https://github.com/trendyol/kube-port-finder
+$ git clone https://github.com/trendyol/kube-port-finder
 
 $ cd kube-port-finder
 
