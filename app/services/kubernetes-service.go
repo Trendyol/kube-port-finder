@@ -2,7 +2,6 @@ package services
 
 import (
 	b64 "encoding/base64"
-	"github.com/imroc/req"
 	utils "github.com/peacecwz/kube-port-finder/app"
 	"github.com/peacecwz/kube-port-finder/app/models"
 )
@@ -18,7 +17,7 @@ type KubernetesService struct {
 func (service KubernetesService) GetAllServices(host string, username string, password string) ([]KubeService, error) {
 	var result []KubeService
 	auth := b64.StdEncoding.EncodeToString([]byte(username + ":" + password))
-	authHeader := req.Header{
+	authHeader := map[string]string{
 		"Accept":        "application/json",
 		"Authorization": "Basic " + auth,
 	}

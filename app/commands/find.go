@@ -71,5 +71,5 @@ func FindPorts(service *services.KubernetesService, kubeName string, minPort int
 		}
 	}
 
-	fmt.Printf("Available %d port in your kubernetes", randomPort)
+	fmt.Printf("Available %d port in your kubernetes\n", randomPort)
 }
