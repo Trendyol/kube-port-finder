@@ -14,7 +14,7 @@ func CreateAddCredentialCommand() cli.Command {
 		Usage:   "Add kubernetes credentials",
 		Action: func(c *cli.Context) {
 			AddCredential(c.String("name"),
-				c.String("ip"),
+				c.String("host"),
 				c.String("username"),
 				c.String("password"))
 		},
@@ -24,12 +24,8 @@ func CreateAddCredentialCommand() cli.Command {
 				Usage: "Kubernetes credential name",
 			},
 			cli.StringFlag{
-				Name:  "ip",
-				Usage: "Kubernetes IP address",
-			},
-			cli.StringFlag{
-				Name:  "port",
-				Usage: "Kubernetes port number",
+				Name:  "host",
+				Usage: "Kubernetes Host address",
 			},
 			cli.StringFlag{
 				Name:  "username",
