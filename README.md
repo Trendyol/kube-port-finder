@@ -1,25 +1,7 @@
 # Kubernetes Port Finder
-Find kubernetes available port finder CLI tool
+kube-pf is a command line tool that find available ports on kubernetes. Written in Golang
 
 ## Getting Started
-
-### Installation (OSX) - Not Ready
-
-```bash
-$ brew install kube-pf
-```
-
-### Installation (Ubuntu) - Not Ready
-
-```bash
-$ apt-get update && apt-get install kube-pf
-```
-
-### Installation (Windows) - Not Ready
-
-```
-choco install kube-pf
-```
 
 ### Manual Installation
 
@@ -62,13 +44,22 @@ GLOBAL OPTIONS:
 
 ```bash
 $ ./kube-pf add-credential --name "your-kube-config-name" --host "https://127.0.0.1" --username "kube-user" --password "kube-password"
+
+Saved your credentials
 ```
 
 ### Find Port Number
 
 ```bash
 $ ./kube-pf find --name "your-kube-config-name" --range 1000,4000
+
+Available 2292 port in your kubernetes
 ```
+
+## Dependencies
+
+* Viper [github.com/spf13/viper](github.com/spf13/viper)
+* CLI [github.com/urfave/cli](github.com/urfave/cli)
 
 ## Contributing
 
