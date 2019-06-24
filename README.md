@@ -3,19 +3,19 @@ Find kubernetes available port finder CLI tool
 
 ## Getting Started
 
-### Installation (OSX)
+### Installation (OSX) - Not Ready
 
 ```bash
 $ brew install kube-pf
 ```
 
-### Installation (Ubuntu)
+### Installation (Ubuntu) - Not Ready
 
 ```bash
 $ apt-get update && apt-get install kube-pf
 ```
 
-### Installation (Windows)
+### Installation (Windows) - Not Ready
 
 ```
 choco install kube-pf
