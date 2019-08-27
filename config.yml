@@ -1,1 +1,6 @@
-# Your kubernetes credentials config
+prod:host: https://tisfrontk8s.trendyol.com:6443
+prod:password: 7AarRMlsOdWA25z
+prod:username: kube
+your-kube-config-name:host: https://127.0.0.1
+your-kube-config-name:password: kube-password
+your-kube-config-name:username: kube-user

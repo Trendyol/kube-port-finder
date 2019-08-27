@@ -2,8 +2,8 @@ package commands
 
 import (
 	"fmt"
-	utils "github.com/peacecwz/kube-port-finder/app"
-	"github.com/peacecwz/kube-port-finder/app/services"
+	utils "github.com/trendyol/kube-port-finder/app"
+	"github.com/trendyol/kube-port-finder/app/services"
 	"github.com/spf13/viper"
 	"github.com/urfave/cli"
 	"strconv"

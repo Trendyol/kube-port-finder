@@ -2,8 +2,8 @@ package services
 
 import (
 	b64 "encoding/base64"
-	utils "github.com/peacecwz/kube-port-finder/app"
-	"github.com/peacecwz/kube-port-finder/app/models"
+	utils "github.com/trendyol/kube-port-finder/app"
+	"github.com/trendyol/kube-port-finder/app/models"
 )
 
 type KubeService struct {

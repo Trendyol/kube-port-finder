@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	cmd "github.com/peacecwz/kube-port-finder/app/commands"
+	cmd "github.com/trendyol/kube-port-finder/app/commands"
 	"github.com/spf13/viper"
 	"github.com/urfave/cli"
 	"log"
