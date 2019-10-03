@@ -1,8 +1,8 @@
 package main
 
 import (
+	cmd "./app/commands"
 	"fmt"
-	cmd "github.com/trendyol/kube-port-finder/app/commands"
 	"github.com/spf13/viper"
 	"github.com/urfave/cli"
 	"log"
