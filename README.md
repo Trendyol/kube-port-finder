@@ -3,6 +3,13 @@ kube-pf is a command line tool that find available ports on kubernetes. Written 
 
 ## Getting Started
 
+Install kube-port-finder on Mac with Brew
+
+```bash
+brew tap trendyol/trendyol-tap
+brew install kube-port-finder
+```
+
 ## Dependencies
 
 * Viper [github.com/spf13/viper](github.com/spf13/viper)
