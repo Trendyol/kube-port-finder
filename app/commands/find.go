@@ -1,9 +1,9 @@
 package commands
 
 import (
+	"../services"
+	"../utils"
 	"fmt"
-	utils "github.com/trendyol/kube-port-finder/app"
-	"github.com/trendyol/kube-port-finder/app/services"
 	"github.com/spf13/viper"
 	"github.com/urfave/cli"
 	"strconv"
@@ -63,13 +63,14 @@ func FindPorts(service *services.KubernetesService, kubeName string, minPort int
 		}
 	}
 
-	var randomPort int
-	for {
-		randomPort = utils.Random(minPort, maxPort)
-		if utils.Contains(allPorts, randomPort) == false {
+	availablePort := -1
+
+	for i := minPort; i <= maxPort; i++ {
+		if utils.Contains(allPorts, i) == false {
+			availablePort = i
 			break
 		}
 	}
 
-	fmt.Printf("Available %d port in your kubernetes\n", randomPort)
+	fmt.Printf("Available %d port in your kubernetes\n", availablePort)
 }
