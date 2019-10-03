@@ -3,6 +3,11 @@ kube-pf is a command line tool that find available ports on kubernetes. Written 
 
 ## Getting Started
 
+## Dependencies
+
+* Viper [github.com/spf13/viper](github.com/spf13/viper)
+* CLI [github.com/urfave/cli](github.com/urfave/cli)
+
 ### Manual Installation
 
 ```bash
@@ -10,8 +15,12 @@ $ git clone https://github.com/trendyol/kube-port-finder
 
 $ cd kube-port-finder
 
+$ go get
+
 $ go build kube-pf.go
 ```
+
+
 
 ## Usage
 
@@ -56,10 +65,7 @@ $ ./kube-pf find --name "your-kube-config-name" --range 1000,4000
 Available 2292 port in your kubernetes
 ```
 
-## Dependencies
 
-* Viper [github.com/spf13/viper](github.com/spf13/viper)
-* CLI [github.com/urfave/cli](github.com/urfave/cli)
 
 ## Contributing
 

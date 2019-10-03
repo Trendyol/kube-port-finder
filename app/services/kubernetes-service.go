@@ -1,9 +1,9 @@
 package services
 
 import (
+	"../models"
+	"../utils"
 	b64 "encoding/base64"
-	utils "github.com/trendyol/kube-port-finder/app"
-	"github.com/trendyol/kube-port-finder/app/models"
 )
 
 type KubeService struct {
